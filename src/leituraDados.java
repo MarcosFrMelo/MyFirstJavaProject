@@ -8,8 +8,8 @@ public class leituraDados {
         String nome;
         int idade;
         System.out.println("Insira seu nome:");
-        nome = sc.next();
-        System.out.printf("Seu nome:%s%n", nome);
+        nome = sc.nextLine();
+        System.out.printf("Seu nome:%s teste %n", nome);
         System.out.println("Insira a sua idade:");
         idade = sc.nextInt();
         System.out.printf("Sua idade: %d %n", idade);
