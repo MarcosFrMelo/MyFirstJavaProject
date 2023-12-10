@@ -46,7 +46,21 @@ public class Matriz {
             }
 
         } while (opcao == 6);
-
-
+        sc.close();
     }
+
+    public static void notaALuno(float[][] alunoNota){
+        Scanner sc = new Scanner(System.in);
+        int turma, aluno;
+        System.out.println("Insira a turma do aluno:");
+        turma = sc.nextInt();
+
+        System.out.println("Insira o numero do aluno:");
+        aluno = sc.nextInt();
+
+        System.out.println("Nota do aluno: " + alunoNota);
+    }
+
+
+
 }
