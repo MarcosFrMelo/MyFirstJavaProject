@@ -1,7 +1,9 @@
+package java_basico;
+
 import java.util.Locale;
 import java.util.Scanner;
 
-public class leituraDados {
+public class LeituraDados {
     public static void main(String[] args){
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);

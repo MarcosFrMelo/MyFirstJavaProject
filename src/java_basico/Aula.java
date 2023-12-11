@@ -1,4 +1,6 @@
-public class aula2 {
+package java_basico;
+
+public class Aula {
     public static void main(String[] args){
         int y;
         double x;

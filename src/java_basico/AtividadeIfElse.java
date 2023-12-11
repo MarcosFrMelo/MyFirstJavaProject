@@ -1,6 +1,8 @@
+package java_basico;
+
 import java.util.Scanner;
 
-public class atividadeifelse {
+public class AtividadeIfElse {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int minutos;

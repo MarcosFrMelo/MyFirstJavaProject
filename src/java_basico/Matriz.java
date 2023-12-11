@@ -1,3 +1,4 @@
+package java_basico;
 
 import java.util.Scanner;
 
@@ -49,7 +50,16 @@ public class Matriz {
         sc.close();
     }
 
-    public static void notaALuno(float[][] alunoNota){
+    private static void maiorMedia(float[][] alunos) {
+
+
+    
+    }
+
+    private static void alunosAcimaMedia(float[][] alunos) {
+    }
+
+    public static void notaAluno(float[][] alunoNota){
         Scanner sc = new Scanner(System.in);
         int turma, aluno;
         System.out.println("Insira a turma do aluno:");
@@ -58,9 +68,28 @@ public class Matriz {
         System.out.println("Insira o numero do aluno:");
         aluno = sc.nextInt();
 
-        System.out.println("Nota do aluno: " + alunoNota);
+        System.out.println("Nota do aluno: " + alunoNota[turma-1][aluno-1]);
+
+        sc.close();
     }
 
+    private static void mediaTurma(float[][] nota){
+        Scanner sc = new Scanner(System.in);
+        int turma;
+        double media = 0;
+
+        System.out.println("Insira a turma que deseja ver a media:");
+        turma = sc.nextInt();
+
+        for (int i = 0; i < 30; i++){
+            media += nota[turma-1][i];
+        }
+        media /= 30;
+
+        System.out.println("A media da turma é: " + media);
+
+        sc.close();
+    }
 
 
 }

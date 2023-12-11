@@ -1,3 +1,5 @@
+package java_basico;
+
 import java.util.Scanner;
 
 public class Funcao{

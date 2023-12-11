@@ -1,9 +1,9 @@
-
+package java_basico;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Mathaula {
+public class MathAula {
     public static void main(String[] args){
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
