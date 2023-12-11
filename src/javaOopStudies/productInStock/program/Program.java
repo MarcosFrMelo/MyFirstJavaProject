@@ -59,7 +59,4 @@ public class Program {
         } while (opcao != 4);
         scanner.close();
     }
-=======
-public class Program {
->>>>>>> origin/master
 }
