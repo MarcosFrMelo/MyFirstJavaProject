@@ -1,4 +1,4 @@
-package javaOopStudies.TriangleArea.Entities;
+package javaOopStudies.triangleArea.Entities;
 
 public class Triangle {
     public double a;

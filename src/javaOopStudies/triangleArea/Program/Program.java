@@ -1,6 +1,6 @@
-package javaOopStudies.TriangleArea.Program;
+package javaOopStudies.triangleArea.Program;
 
-import javaOopStudies.TriangleArea.Entities.Triangle;
+import javaOopStudies.triangleArea.Entities.Triangle;
 import java.util.Locale;
 import java.util.Scanner;
 
