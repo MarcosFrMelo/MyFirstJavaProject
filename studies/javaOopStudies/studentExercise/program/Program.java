@@ -12,7 +12,7 @@ public class Program {
         System.out.println("Enter the student's name:");
         student.name = scanner.nextLine();
 
-        for (int i=0; i<3; i++){
+        for (int i=0; i<student.grade.length; i++){
             System.out.printf("Enter the student's %d° grade:", i+1);
             student.grade[i] = scanner.nextFloat();
         }
