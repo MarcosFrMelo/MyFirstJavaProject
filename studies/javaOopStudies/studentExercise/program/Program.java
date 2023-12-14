@@ -82,7 +82,6 @@ public class Program {
                 break;
             }
         }
-        return;
     }
 
     public static void studendData() {
@@ -101,7 +100,7 @@ public class Program {
         System.out.println("Enter the number of the student you want to modify:");
         studentNumber = scanner.nextInt();
 
-        students[studentNumber-1].toString();
+        System.out.println(students[studentNumber-1]);
 
         System.out.println("Is this the student you want to change? enter 1 for 'yes' and 2 for 'no'");
         option = scanner.nextInt();
