@@ -1,33 +1,40 @@
 package javaOopStudies.studentExercise.entiteis;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Student {
-    public String name;
-    public float[] grade = new float[3];
+    private String name;
+    private float[] grade = new float[3];
 
-    public void studendData() {
-        System.out.printf("\nName: %s\n", name);
-        float finalGrade = 0;
-        for (int i = 0; i < 3; i++) {
-            System.out.printf("Grade %d°: %.2f\n", i + 1, grade[i]);
-            finalGrade += grade[i];
-        }
-        if (finalGrade < 60) {
-            System.out.println("Final Grade: " + finalGrade);
-            System.out.println("Missing points: " + (60 - finalGrade));
-        } else {
-            System.out.println("Final Grade: " + finalGrade);
-        }
+    public Student(String name) {
+        this.name = name;
     }
 
-    public void modifyGrade() {
-        Scanner scanner = new Scanner(System.in);
+    public Student(String name, float[] grade) {
+        this.name = name;
+        this.grade = grade;
+    }
 
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Enter the student's new grades:");
-            grade[i] = scanner.nextFloat();
-        }
+    public String name() {
+        return name;
+    }
+
+    public float[] grade() {
+        return grade;
+    }
+
+    public void setGrade(float[] grade) {
+        this.grade = grade;
+    }
+
+    @Override
+    public String toString() {
+        return ("Name: " + name +
+                "Grade 1: " + grade[0] +
+                "Grade 2: " + grade[1] +
+                "Grade 3: " + grade[2]);
     }
 }
+
+
 
