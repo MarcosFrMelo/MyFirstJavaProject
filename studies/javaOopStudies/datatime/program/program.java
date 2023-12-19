@@ -4,7 +4,6 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 public class program {
     public static void main(String[] args) {
@@ -24,8 +23,8 @@ public class program {
         LocalDate d08 = LocalDate.parse("11/04/2005", fmt01);
         LocalDateTime d09 = LocalDateTime.parse("11/04/2005 00:04", fmt02);
 
-        LocalDate d10 = LocalDate.of(2005, 04, 11);
-        LocalDateTime d11 = LocalDateTime.of(2005, 04, 11, 01, 04, 06);
+        LocalDate d10 = LocalDate.of(2005, 4, 11);
+        LocalDateTime d11 = LocalDateTime.of(2005, 4, 11, 1, 4, 6);
 
         System.out.println("d1: " + d01);
         System.out.println("d2: " + d02);
