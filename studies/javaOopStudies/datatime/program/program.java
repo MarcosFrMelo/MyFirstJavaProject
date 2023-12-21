@@ -70,6 +70,8 @@ public class program {
         System.out.println("d10: " + d10.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
         System.out.println("d11: " + d11);
 
+        System.out.println("Its just an teste");
+
 
     }
 }
