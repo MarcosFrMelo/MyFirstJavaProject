@@ -10,9 +10,10 @@ public class Order {
     private OrderStatus orderStatus;
     private OrderItem orderItem;
 
-    public Order(LocalDateTime moment, OrderItem orderItem) {
+    public Order(LocalDateTime moment, OrderItem orderItem, OrderStatus orderStatus) {
         this.moment = moment;
         this.orderItem = orderItem;
+        this.orderStatus = orderStatus;
     }
 
     public OrderStatus getOrderStatus() {
@@ -25,9 +26,8 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order:" + "\n" +
-                "moment:" + moment + "\n" +
+        return "moment:" + moment + "\n" +
                 "orderStatus:" + orderStatus + "\n" +
-                "orderItem:" + orderItem;
+                "\n\torderItem:" + orderItem;
     }
 }

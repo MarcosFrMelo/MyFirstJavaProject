@@ -81,7 +81,7 @@ public class Program {
                     int quantity = scanner.nextInt();
                     scanner.nextLine();
                     boolean customerPurchase;
-
+                    OrderStatus orderStatus = null;
                     LocalDateTime dateOfCustomerPurchase = null;
                     do {
                         System.out.println("Enter the time the customer made the purchase (Example: day/month/year hour:min");
@@ -106,24 +106,25 @@ public class Program {
 
                     switch (productStatusOption) {
                         case 1:
-                            client.getOrder().setOrderStatus(OrderStatus.PENDING_PAYMENT);
+                            orderStatus = OrderStatus.PENDING_PAYMENT;
                             break;
                         case 2:
-                            client.getOrder().setOrderStatus(OrderStatus.PROCESSING);
+                            orderStatus = OrderStatus.PROCESSING;
                             break;
                         case 3:
-                            client.getOrder().setOrderStatus(OrderStatus.SHIPPED);
+                            orderStatus = OrderStatus.SHIPPED;
                             break;
                         case 4:
-                            client.getOrder().setOrderStatus(OrderStatus.DELIVERED);
+                            orderStatus = OrderStatus.DELIVERED;
                             break;
                         default:
                             System.out.println("Option entered is invalid");
                             break;
                     }
+
                     Product product = new Product(productName, productPrice);
                     OrderItem orderItem = new OrderItem(quantity, product);
-                    Order order = new Order(dateOfCustomerPurchase, orderItem);
+                    Order order = new Order(dateOfCustomerPurchase, orderItem, orderStatus);
                     client.setOrder(order);
 
                     System.out.println("customer request:");

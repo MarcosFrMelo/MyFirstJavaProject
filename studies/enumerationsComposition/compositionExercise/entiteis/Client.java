@@ -31,7 +31,7 @@ public class Client {
     }
 
     public String toStingTwo(){
-        return "order:" + order + "\n";
+        return "\n\torder:" + order + "\n";
     }
 
     public Order getOrder() {
