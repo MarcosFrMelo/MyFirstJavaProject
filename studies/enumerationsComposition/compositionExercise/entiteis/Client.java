@@ -17,4 +17,28 @@ public class Client {
         this.email = email;
         this.birthDate = birthDate;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Client:" + "\n" +
+                "name:" + name + "\n" +
+                "email:" + email + "\n" +
+                "birthDate:" + birthDate + "\n";
+    }
+
+    public String toStingTwo(){
+        return "order:" + order + "\n";
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
 }

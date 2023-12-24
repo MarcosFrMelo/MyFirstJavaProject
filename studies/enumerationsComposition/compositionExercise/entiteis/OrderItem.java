@@ -3,33 +3,25 @@ package enumerationsComposition.compositionExercise.entiteis;
 public class OrderItem {
     private Integer quantity;
     private Product product;
-    private Double total;
+    private Double total = (this.quantity * product().getPrice());
     public OrderItem(){
     }
     public OrderItem(Integer quantity, Product product) {
         this.quantity = quantity;
         this.product = product;
     }
-
-    public void subTotal(){
-        total = quantity * product.price();
+    public void setTotal(int quantity){
+        this.total = product.getPrice() * quantity;
     }
-
-    public Integer quantity() {
-        return quantity;
-    }
-
-    public OrderItem setQuantity(Integer quantity) {
-        this.quantity = quantity;
-        return this;
-    }
-
     public Product product() {
         return product;
     }
 
-    public OrderItem setProduct(Product product) {
-        this.product = product;
-        return this;
+    @Override
+    public String toString() {
+        return "OrderItem:" + "\n" +
+                "quantity:" + quantity + "\n" +
+                "product:" + product + "\n" +
+                "total:" + total;
     }
 }
