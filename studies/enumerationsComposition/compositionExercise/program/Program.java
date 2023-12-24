@@ -40,6 +40,9 @@ public class Program {
                 case 4:
                     deleteProductOrCostumer(clientList);
                     break;
+                case 5:
+                    listProduct(clientList);
+                    break;
                 case 6:
                     System.out.println("finishing program");
                     return;
@@ -47,11 +50,22 @@ public class Program {
         } while (true);
 
     }
+    private static void listProduct(List<Client> clientList){
+        for (Client client:clientList) {
+            System.out.println(client.toStingTwo());
+        }
+    }
 
     private static void deleteProductOrCostumer(List<Client> clientList) {
+
+
+
     }
 
     private static void editProduct(List<Client> clientList) {
+
+
+
     }
 
     private static void registerProducts(List<Client> clientList) {
