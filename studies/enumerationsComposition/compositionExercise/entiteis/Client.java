@@ -22,6 +22,26 @@ public class Client {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+    }
+
     @Override
     public String toString() {
         return "Client:" + "\n" +
@@ -40,5 +60,8 @@ public class Client {
 
     public void setOrder(Order order) {
         this.order = order;
+    }
+    public void removeOrder(){
+        order = null;
     }
 }

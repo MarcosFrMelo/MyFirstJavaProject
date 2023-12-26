@@ -16,12 +16,28 @@ public class Order {
         this.orderStatus = orderStatus;
     }
 
+    public LocalDateTime getMoment() {
+        return moment;
+    }
+
+    public void setMoment(LocalDateTime moment) {
+        this.moment = moment;
+    }
+
     public OrderStatus getOrderStatus() {
         return orderStatus;
     }
 
     public void setOrderStatus(OrderStatus orderStatus) {
         this.orderStatus = orderStatus;
+    }
+
+    public OrderItem getOrderItem() {
+        return orderItem;
+    }
+
+    public void setOrderItem(OrderItem orderItem) {
+        this.orderItem = orderItem;
     }
 
     @Override
