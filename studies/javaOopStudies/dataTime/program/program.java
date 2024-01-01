@@ -1,8 +1,7 @@
-package javaOopStudies.datatime.program;
+package javaOopStudies.dataTime.program;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 public class program {
     public static void main(String[] args) {
