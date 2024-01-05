@@ -27,5 +27,10 @@ public class BusinessAccount extends Account {
             System.out.println("Quantity entered is greater than allowed by your account");
         }
     }
+    @Override
+    public void withdraw(Double amount){
+        super.withdraw(amount);
+        balance -= 2.0;
+    }
 }
 
