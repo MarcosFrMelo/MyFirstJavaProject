@@ -1,4 +1,4 @@
-package enumerationsComposition.compositionExercise.entiteis;
+package enumerationsComposition.compositionExercise.entities;
 
 public class Product {
     private String productName;

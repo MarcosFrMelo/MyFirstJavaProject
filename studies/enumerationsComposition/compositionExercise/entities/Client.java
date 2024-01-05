@@ -1,6 +1,5 @@
-package enumerationsComposition.compositionExercise.entiteis;
+package enumerationsComposition.compositionExercise.entities;
 
-import java.sql.Time;
 import java.time.LocalDate;
 
 public class Client {
