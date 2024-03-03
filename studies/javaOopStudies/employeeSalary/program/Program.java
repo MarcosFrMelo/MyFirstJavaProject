@@ -79,7 +79,6 @@ public class Program {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the employee ID");
-        System.out.println("Commit test, i will delete soon");
         int employeeId = scanner.nextInt();
 
         for (Employees employee : employeesList) {
