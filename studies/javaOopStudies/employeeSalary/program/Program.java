@@ -23,7 +23,7 @@ public class Program {
                     4 - Exit.
                     """);
             option = scanner.nextInt();
-            switch (option){
+            switch (option) {
                 case 1:
                     employeeRegistration(employeesList, employeesQuantity);
                     break;
@@ -43,19 +43,18 @@ public class Program {
         } while (true);
     }
 
-    public static void employeeRegistration(List<Employees> employeesList, int employeesQuantity){
+    public static void employeeRegistration(List<Employees> employeesList, int employeesQuantity) {
         Locale.setDefault(Locale.US);
         Scanner scanner = new Scanner(System.in);
         int n;
-        if(employeesQuantity == 0){
+        if (employeesQuantity == 0) {
             System.out.println("How many employees will you register?");
-        }
-        else {
+        } else {
             System.out.println("How many more employees do you want to register?");
         }
         n = scanner.nextInt();
         int i;
-        for (i = employeesQuantity;i < employeesQuantity + n; i++){
+        for (i = employeesQuantity; i < employeesQuantity + n; i++) {
             System.out.print("Enter the employee ID:");
             int id = scanner.nextInt();
             scanner.nextLine();
@@ -69,13 +68,13 @@ public class Program {
         employeesQuantity = i;
     }
 
-    public static void employeesData(List<Employees> employeesList){
+    public static void employeesData(List<Employees> employeesList) {
         for (Employees employees : employeesList) {
             System.out.println(employees);
         }
     }
 
-    public static void modifyEmployees(List<Employees> employeesList){
+    public static void modifyEmployees(List<Employees> employeesList) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the employee ID");
