@@ -1,9 +1,9 @@
 package enumerationsComposition.compositionExercise.program;
 
-import enumerationsComposition.compositionExercise.entiteis.Client;
-import enumerationsComposition.compositionExercise.entiteis.Order;
-import enumerationsComposition.compositionExercise.entiteis.OrderItem;
-import enumerationsComposition.compositionExercise.entiteis.Product;
+import enumerationsComposition.compositionExercise.entities.Client;
+import enumerationsComposition.compositionExercise.entities.Order;
+import enumerationsComposition.compositionExercise.entities.OrderItem;
+import enumerationsComposition.compositionExercise.entities.Product;
 import enumerationsComposition.firstEnum.entiteis.enums.OrderStatus;
 
 import java.time.LocalDate;

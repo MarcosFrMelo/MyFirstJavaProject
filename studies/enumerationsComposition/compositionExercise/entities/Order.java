@@ -1,8 +1,7 @@
-package enumerationsComposition.compositionExercise.entiteis;
+package enumerationsComposition.compositionExercise.entities;
 
 import enumerationsComposition.firstEnum.entiteis.enums.OrderStatus;
 
-import java.sql.Time;
 import java.time.LocalDateTime;
 
 public class Order {

@@ -1,8 +1,12 @@
-package enumerationsComposition.compositionExercise.entiteis;
+package enumerationsComposition.compositionExercise.entities;
 
 public class Product {
     private String productName;
     private Double price;
+    public Product(String productName, Double price) {
+        this.productName = productName;
+        this.price = price;
+    }
 
     public Double getPrice(){
         return this.price;
@@ -21,10 +25,6 @@ public class Product {
 
     }
 
-    public Product(String productName, Double price) {
-        this.productName = productName;
-        this.price = price;
-    }
 
     @Override
     public String toString() {

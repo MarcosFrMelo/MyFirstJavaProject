@@ -1,9 +1,9 @@
-package enumerationsComposition.compositionExercise.entiteis;
+package enumerationsComposition.compositionExercise.entities;
 
 public class OrderItem {
     private Integer quantity;
     private Product product;
-    private Double total = product().getPrice() * quantity;
+    private Double total;
     public OrderItem(){
     }
     public OrderItem(Integer quantity, Product product) {
