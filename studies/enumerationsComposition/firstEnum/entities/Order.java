@@ -1,7 +1,9 @@
 package enumerationsComposition.firstEnum.entities;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
+import enumerationsComposition.compositionExercise.entities.OrderItem;
 import enumerationsComposition.firstEnum.entities.enums.OrderStatus;
 
 public class Order {
@@ -9,6 +11,7 @@ public class Order {
     private Integer id;
     private Date moment;
     private OrderStatus status;
+    private OrderItem orderItem;
 
     public Order() {
     }
@@ -31,7 +34,7 @@ public class Order {
         return moment;
     }
 
-    public void setMoment(Date moment) {
+    public void setMoment(LocalDateTime moment) {
         this.moment = moment;
     }
 
@@ -45,5 +48,12 @@ public class Order {
 
     public String toString() {
         return "Order [id=" + id + ", moment=" + moment + ", status=" + status + "]";
+    }
+
+    public OrderItem getOrderItem() {
+        return orderItem;
+    }
+
+    public String getOrderStatus() {
     }
 }
