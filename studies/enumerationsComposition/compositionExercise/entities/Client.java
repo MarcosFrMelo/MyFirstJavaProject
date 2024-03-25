@@ -1,5 +1,7 @@
 package enumerationsComposition.compositionExercise.entities;
 
+import enumerationsComposition.firstEnum.entities.Order;
+
 import java.time.LocalDate;
 
 public class Client {

@@ -1,8 +1,8 @@
-package enumerationsComposition.firstEnum.entiteis;
-
-import enumerationsComposition.firstEnum.entiteis.enums.OrderStatus;
+package enumerationsComposition.firstEnum.entities;
 
 import java.util.Date;
+
+import enumerationsComposition.firstEnum.entities.enums.OrderStatus;
 
 public class Order {
 

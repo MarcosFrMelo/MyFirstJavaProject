@@ -1,8 +1,8 @@
 package enumerationsComposition.compositionExercise.entities;
 
-import enumerationsComposition.firstEnum.entiteis.enums.OrderStatus;
-
 import java.time.LocalDateTime;
+
+import enumerationsComposition.firstEnum.entities.enums.OrderStatus;
 
 public class Order {
     private LocalDateTime moment;

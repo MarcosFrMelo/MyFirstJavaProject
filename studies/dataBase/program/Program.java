@@ -1,9 +1,8 @@
-package dataBaseStudies.program;
-
-import dataBaseStudies.entiteis.Person;
-import javaOopStudies.employeeSalary.entitieis.Employees;
+package dataBase.program;
 
 import java.util.*;
+
+import dataBase.entities.*;
 
 public class Program {
     public static void main(String[] args) {
@@ -20,7 +19,7 @@ public class Program {
                 case 5:
                     return;
             }
-
+        
         }while (true);
     }
 
@@ -38,7 +37,9 @@ public class Program {
                 6 - Enviar para o banco de dados
                 """);
         option = scanner.nextInt();
+        scanner.close();
         return(option);
+        
     }
     public static void adicionarPessoa(Person person, List<Person> list){
 

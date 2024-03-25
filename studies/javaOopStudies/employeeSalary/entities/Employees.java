@@ -1,6 +1,5 @@
-package javaOopStudies.employeeSalary.entitieis;
+package javaOopStudies.employeeSalary.entities;
 
-import java.text.DecimalFormat;
 
 public class Employees {
     private float salary;

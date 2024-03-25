@@ -4,7 +4,7 @@ import enumerationsComposition.compositionExercise.entities.Client;
 import enumerationsComposition.compositionExercise.entities.Order;
 import enumerationsComposition.compositionExercise.entities.OrderItem;
 import enumerationsComposition.compositionExercise.entities.Product;
-import enumerationsComposition.firstEnum.entiteis.enums.OrderStatus;
+import enumerationsComposition.firstEnum.entities.enums.OrderStatus;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

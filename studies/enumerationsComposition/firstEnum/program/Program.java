@@ -1,9 +1,9 @@
 package enumerationsComposition.firstEnum.program;
 
-import enumerationsComposition.firstEnum.entiteis.Order;
-import enumerationsComposition.firstEnum.entiteis.enums.OrderStatus;
-
 import java.util.Date;
+
+import enumerationsComposition.firstEnum.entities.Order;
+import enumerationsComposition.firstEnum.entities.enums.OrderStatus;
 
 public class Program {
     public static void main(String[] args) {

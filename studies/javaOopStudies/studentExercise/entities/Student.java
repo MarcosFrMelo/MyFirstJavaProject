@@ -1,4 +1,4 @@
-package javaOopStudies.studentExercise.entiteis;
+package javaOopStudies.studentExercise.entities;
 
 import java.util.Arrays;
 

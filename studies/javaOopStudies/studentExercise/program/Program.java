@@ -1,8 +1,8 @@
 package javaOopStudies.studentExercise.program;
 
-import javaOopStudies.studentExercise.entiteis.Student;
-
 import java.util.Scanner;
+
+import javaOopStudies.studentExercise.entities.Student;
 
 public class Program {
 

@@ -1,4 +1,4 @@
-package dataBaseStudies.entiteis;
+package dataBase.entities;
 
 public class Person {
     private String name;
