@@ -193,7 +193,7 @@ public class Program {
                                 break;
                             case 2:
                                 System.out.println("--------------------------\n"
-                                        + "Old product quantity: " + client.getOrder().getOrderItem().quantity()
+                                        + "Old product quantity: " + client.getOrder().get
                                         + "\n--------------------------");
 
                                 System.out.println("Enter the new product quantity");
@@ -271,7 +271,7 @@ public class Program {
                                         System.out.println("Option entered is invalid");
                                         break;
                                 }
-                                client.getOrder().setOrderStatus(orderStatus);
+                                client.getOrder().setStatus(orderStatus);
                                 System.out.println("-------------------------\n"
                                         + "New Order Status: " + client.getOrder().getOrderStatus()
                                         + "\n-------------------------");

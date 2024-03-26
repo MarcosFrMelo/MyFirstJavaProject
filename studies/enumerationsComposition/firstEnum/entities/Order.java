@@ -34,7 +34,7 @@ public class Order {
         return moment;
     }
 
-    public void setMoment(LocalDateTime moment) {
+    public void setMoment(Date moment) {
         this.moment = moment;
     }
 
@@ -54,6 +54,7 @@ public class Order {
         return orderItem;
     }
 
-    public String getOrderStatus() {
+    public OrderStatus getOrderStatus() {
+        return status;
     }
 }

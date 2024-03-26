@@ -3,6 +3,7 @@ package enumerationsComposition.compositionExercise.entities;
 import java.time.LocalDateTime;
 
 import enumerationsComposition.firstEnum.entities.enums.OrderStatus;
+import enumerationsComposition.compositionExercise.entities.OrderItem;
 
 public class Order {
     private LocalDateTime moment;
