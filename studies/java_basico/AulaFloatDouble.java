@@ -9,6 +9,7 @@ public class AulaFloatDouble {
         float tamanho;
         double divisaoAleatoria;
         tamanho = 1.75f;
+        double teste = 154.25;
         divisaoAleatoria = (double) a/b;
         System.out.printf("tamanho: %.2f, e divisao ai: %.2f", tamanho, divisaoAleatoria);
     }
