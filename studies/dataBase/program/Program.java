@@ -1,48 +1,41 @@
-package dataBase.program;
+//conectar com o banco de dados
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
-import java.util.*;
-
-import dataBase.entities.*;
-
-public class Program {
+public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Person person = new Person();
-        List<Person> list = new ArrayList<>();
+        // Configurações de conexão com o banco de dados
+        String url = "jdbc:mysql://localhost:3306/new_db";
+        String usuario = "marcos";
+        String senha = "112005ma";
 
-        int option = menu();
-        do {
+        // Objeto de conexão
+        Connection conexao = null;
 
-            switch (option){
-                case 1:
-                    adicionarPessoa(person, list);
-                case 5:
-                    return;
+        try {
+            // Estabelece a conexão com o banco de dados
+            conexao = DriverManager.getConnection(url, usuario, senha);
+
+            // Verifica se a conexão foi bem-sucedida
+            if (conexao != null) {
+                System.out.println("Conexão bem-sucedida!");
+                // Faça operações no banco de dados aqui
+            } else {
+                System.out.println("Falha na conexão!");
             }
-        
-        }while (true);
+        } catch (SQLException e) {
+            // Captura e imprime erros de SQL
+            e.printStackTrace();
+        } finally {
+            try {
+                // Fecha a conexão
+                if (conexao != null) {
+                    conexao.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
-
-    public static int menu(){
-        Scanner scanner = new Scanner(System.in);
-        int option;
-
-        System.out.println("""
-                Insira a opção que deseja:
-                1 - Adicionar Pessoas
-                2 - Remover Pessoas
-                3 - Editar Pessoas
-                4 - Deletar Pessoas
-                5 - Sair
-                6 - Enviar para o banco de dados
-                """);
-        option = scanner.nextInt();
-        scanner.close();
-        return(option);
-        
-    }
-    public static void adicionarPessoa(Person person, List<Person> list){
-
-    }
-
 }

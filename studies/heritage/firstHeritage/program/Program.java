@@ -3,6 +3,7 @@ package heritage.firstHeritage.program;
 import heritage.firstHeritage.entities.Account;
 import heritage.firstHeritage.entities.BusinessAccount;
 import heritage.firstHeritage.entities.SavingsAccount;
+import heritage.firstHeritage.entities.SavingsAccountPlus;
 
 public class Program {
     public static void main(String[] args) {
