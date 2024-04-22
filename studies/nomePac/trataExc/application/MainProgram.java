@@ -49,7 +49,6 @@ public class MainProgram {
             }
 
         }while(valid == false);
-        
 
         sc.close();
     }   
