@@ -12,6 +12,9 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.*;
 
+
+
+
 public class Program {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -45,10 +48,10 @@ public class Program {
                     break;
                 case 6:
                     System.out.println("finishing program");
+                    scanner.close();
                     return;
             }
         } while (true);
-
     }
 
     private static void listProduct(List<Client> clientList) {
@@ -88,6 +91,7 @@ public class Program {
                 }
             }
         }
+        scanner.close();
     }
 
     private static void editProduct(List<Client> clientList) {
@@ -158,6 +162,8 @@ public class Program {
                                 System.out.println("Enter the new customer email:");
                                 String newEmail = scanner.nextLine();
 
+                                client.setEmail(newEmail);
+
                                 System.out.println("--------------------------\n"
                                         + "New Email: " + client.getEmail()
                                         + "\n--------------------------");
@@ -193,7 +199,7 @@ public class Program {
                                 break;
                             case 2:
                                 System.out.println("--------------------------\n"
-                                        + "Old product quantity: " + client.getOrder().get
+                                        + "Old product quantity: " + client.getOrder().getOrderItem().quantity()
                                         + "\n--------------------------");
 
                                 System.out.println("Enter the new product quantity");
@@ -236,7 +242,7 @@ public class Program {
                                         purchase = true;
                                     }
                                 } while (purchase);
-                                client.getOrder().setMoment(newPurchaseMoment);
+                                client.getOrder().setMoment(newPurchaseMoment);;
                                 System.out.println("--------------------------\n"
                                         + "New Purchase Moment: " + client.getOrder().getMoment()
                                         + "\n--------------------------");
@@ -271,7 +277,7 @@ public class Program {
                                         System.out.println("Option entered is invalid");
                                         break;
                                 }
-                                client.getOrder().setStatus(orderStatus);
+                                client.getOrder().setOrderStatus(orderStatus);
                                 System.out.println("-------------------------\n"
                                         + "New Order Status: " + client.getOrder().getOrderStatus()
                                         + "\n-------------------------");
@@ -290,6 +296,7 @@ public class Program {
                 }
             }
         }
+        scanner.close();
     }
 
     private static void registerProducts(List<Client> clientList) {
@@ -371,6 +378,8 @@ public class Program {
                     System.out.println(client.toStingTwo());
 
                 } else {
+                    System.out.println("customer not found");
+                    scanner.close();
                     return;
                 }
                 customerFound = false;
@@ -381,6 +390,7 @@ public class Program {
         if (customerFound) {
             System.out.println("customer not found");
         }
+        scanner.close();
 
     }
 
@@ -413,6 +423,7 @@ public class Program {
                 }
             } while (tryCatch);
             System.out.println("customer successfully registered");
+            scanner.close();
         }
     }
 }

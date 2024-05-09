@@ -1,6 +1,6 @@
 package enumerationsComposition.compositionExercise.entities;
 
-import enumerationsComposition.firstEnum.entities.Order;
+import enumerationsComposition.compositionExercise.entities.Order;
 
 import java.time.LocalDate;
 
@@ -11,6 +11,10 @@ public class Client {
     private Order order;
 
     public Client() {
+    }
+
+    public Client(Order order) {
+        this.order = order;
     }
 
     public Client(String name, String email, LocalDate birthDate) {
