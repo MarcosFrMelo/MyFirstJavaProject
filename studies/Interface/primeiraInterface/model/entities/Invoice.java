@@ -1,4 +1,4 @@
-package model.entities;
+package Interface.primeiraInterface.model.entities;
 
 public class Invoice {
 

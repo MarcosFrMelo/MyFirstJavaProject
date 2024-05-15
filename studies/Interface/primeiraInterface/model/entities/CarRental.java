@@ -1,4 +1,4 @@
-package model.entities;
+package Interface.primeiraInterface.model.entities;
 
 import java.time.LocalDateTime;
 

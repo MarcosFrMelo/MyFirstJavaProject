@@ -1,4 +1,4 @@
-package application;
+package Interface.primeiraInterface.application;
 
 import java.text.ParseException;
 import java.time.LocalDateTime;
@@ -6,10 +6,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
 
-import model.entities.CarRental;
-import model.entities.Vehicle;
-import model.services.BrazilTaxService;
-import model.services.RentalService;
+import Interface.primeiraInterface.model.entities.CarRental;
+import Interface.primeiraInterface.model.entities.Vehicle;
+import Interface.primeiraInterface.model.services.BrazilTaxService;
+import Interface.primeiraInterface.model.services.RentalService;
 
 public class Program {
 

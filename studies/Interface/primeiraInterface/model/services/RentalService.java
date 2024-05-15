@@ -1,9 +1,9 @@
-package model.services;
+package Interface.primeiraInterface.model.services;
 
 import java.time.Duration;
 
-import model.entities.CarRental;
-import model.entities.Invoice;
+import Interface.primeiraInterface.model.entities.CarRental;
+import Interface.primeiraInterface.model.entities.Invoice;
 
 public class RentalService {
 
